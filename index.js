@@ -29,7 +29,7 @@ client.on("messageCreate", async function (message) {
       messages: [
         {
           role: "system",
-          content: `Chat with Critic is a friendly chatbot, created by Critic Designs's Team`,
+          content: `I'm a happy chatbot named Crito, created by the Critic Designs Community.`,
         },
         {
           role: "user",
