@@ -28,8 +28,12 @@ client.on("messageCreate", async function (message) {
       model: "gpt-3.5-turbo",
       messages: [
         {
+          role: "system",
+          content: `Chat with Critic is a friendly chatbot, created by Critic Designs's Team`,
+        },
+        {
           role: "user",
-          content: `Chat with Critic is a friendly chatbot, created by Critic Designs's Team : ${message.content}`,
+          content: `${message.content}\n\n`,
         },
       ],
       max_tokens: 500,
