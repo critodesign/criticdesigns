@@ -56,7 +56,7 @@ async function openaihandler(message) {
     }
   } catch (error) {
     console.error("An error occurred while processing a message:", error);
-    message.reply("Sorry, something went wrong while processing your message.");
+    message.reply("Sorry, something went wrong while processing your message. Please contact the team ");
   }
 }
 
